@@ -4,7 +4,20 @@
   <title>BiMaps</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCig712ErV7lBPqisGWWo2KjoMqGwacHfA&signed_in=true&callback=initMap"></script>
   <%= csrf_meta_tags %>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 5%;
+      padding: 0;
+    }
+    #map {
+      height: 100%;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
 
